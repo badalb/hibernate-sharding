@@ -1,0 +1,12 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.test.domain">
+    <class name="User" table="user">
+        <id name="userId" column="user_id" type="integer">
+          <generator class="com.test.generator.ShardedIDGenrator"/>
+        </id>
+        <property name="name" column="usr_name"/>
+        <property name="gender" column="usr_gender"/>
+        <property name="country" column="usr_country"/>
+    </class>
+</hibernate-mapping>

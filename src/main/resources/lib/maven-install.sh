@@ -1,0 +1,1 @@
+mvn install:install-file -DgroupId=org -DartifactId=hibernate-shard -Dversion=3.0.0.beta2 -Dpackaging=jar -Dfile=hibernate-shards-3.0.0.beta2.jar
